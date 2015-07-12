@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Swamp Press Type Ordering Tool</title>
+</head>
+<body>
+  <div style="">
+    <div id="entry" style="float:left; width: 500px;">
+      <h2 style="margin: 0; padding: 0;">Swamp Press Ordering Tool</h2>
+      <p>This tool is to assist with ordering type from <a href=" http://www.swamppress.com/" target="_BLANK">Swamp Press</a> and uses the <a href="http://www.swamppress.com/Price_Schemes42010.pdf">Half-Strength Jobbing Font Scheme (36a 16A)</a> from their price list.</p>
+      <p>To use the tool, paste a passage of text into the field below and click <b>Count</b>: you'll be shown a table listing each character in your passage, the count of the character in your passage, the count of that character in the Swamp Press scheme.</p>
+      <p>Characters with sufficient count are shown in green, with less than 20% grace in yellow, and with insufficient count in red.</p>
+      <p><i>This is not a Swamp Press-created or maintained tool. It may be broken; use at your own risk.</i>
+      </p>
+      <textarea id="thetext" rows="20" style="width: 500px;"></textarea>
+      <br>
+      <b>Number of Half-Strength Fonts Ordered:</b>
+      <input type="text" id="factor" value="1" size="3">
+      <br>
+      <input type="button" id="countbutton" value="Count" style="font-size: 120%">
+    </div>
+    <div id="results" style="float:left; width: 200px; margin-left: 20px;"></div>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/fontscheme.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
